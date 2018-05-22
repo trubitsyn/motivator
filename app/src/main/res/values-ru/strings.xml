@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мотиватор</string>
+    <string name="apply">Добавить</string>
+    <string name="days_active">Уже %1$d %2$s</string>
+    <string name="from">С</string>
+    <string name="hours">часов</string>
+    <string name="intro_step1">Сначала скажи, когда ты занят:</string>
+    <string name="new_task">Новая задача</string>
+    <string name="new_task_frequency">Напоминать</string>
+    <string name="new_task_title_hint">Что нужно сделать?</string>
+    <string name="no_tasks">Нет задач. Пора добавить!</string>
+    <string name="till">По</string>
+    <string name="welcome">Привет!</string>
+    <string name="skip_button">Пропустить</string>
+    <string name="done_button">Готово</string>
+
+    <string-array name="frequency_values">
+        <item>Очень часто</item>
+        <item>Часто</item>
+        <item>Время от времени</item>
+        <item>Редко</item>
+        <item>Очень редко</item>
+    </string-array>
+
+    <plurals name="days">
+        <item quantity="one">день</item>
+        <item quantity="two">дня</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+        <item quantity="other">дней</item>
+    </plurals>
+</resources>

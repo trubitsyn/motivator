@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.github.trubitsyn.motivator">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="io.github.trubitsyn.motivator.Motivator"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="io.github.trubitsyn.motivator.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.github.trubitsyn.motivator.view.intro.IntroActivity"
+            android:parentActivityName="io.github.trubitsyn.motivator.view.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name="io.github.trubitsyn.motivator.view.TaskActivity"
+            android:parentActivityName="io.github.trubitsyn.motivator.view.MainActivity"
+            android:label=""/>
+
+        <service
+            android:name="io.github.trubitsyn.motivator.notification.NotificationService"
+            android:exported="false" />
+
+        <receiver
+            android:name="io.github.trubitsyn.motivator.notification.NotificationAlarmReceiver"
+            android:exported="false"/>
+
+        <receiver
+            android:name="io.github.trubitsyn.motivator.notification.BootCompletedReceiver"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

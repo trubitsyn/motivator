@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Motivator</string>
+
+    <string name="new_task">New task</string>
+
+    <string name="days_active">%1$d %2$s active</string>
+
+    <plurals name="days">
+        <item quantity="one">day</item>
+        <item quantity="other">days</item>
+    </plurals>
+
+    <string name="no_tasks">No tasks yet. Time has come to add one!</string>
+
+    <string name="new_task_title_hint">What do you have to do?</string>
+
+    <string name="new_task_frequency">Remind me</string>
+
+    <string-array name="frequency_values">
+        <item>Very often</item>
+        <item>Often</item>
+        <item>Time after time</item>
+        <item>Rarely</item>
+        <item>Very rarely</item>
+    </string-array>
+
+    <string name="apply">Apply</string>
+
+    <string name="welcome">Hello!</string>
+
+    <string name="intro_step1">First, tell me in which time you are busy:</string>
+    <string name="from">From</string>
+    <string name="till">Till</string>
+    <string name="hours">o\'clock</string>
+
+    <string name="skip_button">Skip</string>
+    <string name="done_button">Done</string>
+</resources>
