@@ -1,6 +1,13 @@
 # Motivator
 Android application that helps you get things done.
 
+# Screenshots
+<div style="display:flex;">
+<img alt="Tasks" src="screenshots/tasks.png" width="30%">
+<img alt="Task actions" src="screenshots/actions.png" width="30%">
+<img alt="Edit task" src="screenshots/edit.png" width="30%">
+</div>
+
 # LICENSE
 ```
 Copyright (C) 2016 Nikola Trubitsyn
