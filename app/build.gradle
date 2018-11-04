@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "io.github.trubitsyn.motivator"
+        applicationId "org.trubitsyn.motivator"
         resConfigs "en", "ru"
         minSdkVersion 19
         targetSdkVersion 25
