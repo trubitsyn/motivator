@@ -19,7 +19,6 @@
 
 package org.trubitsyn.motivator;
 
-import org.trubitsyn.motivator.util.MockModelFabric;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,25 +26,25 @@ import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import org.trubitsyn.motivator.BuildConfig;
-import io.reactivex.Observable;
-import io.reactivex.Single;
-import io.reactivex.schedulers.Schedulers;
 import org.trubitsyn.motivator.model.Repository;
 import org.trubitsyn.motivator.model.SqliteTaskRepository;
 import org.trubitsyn.motivator.model.Task;
 import org.trubitsyn.motivator.presenter.MainPresenter;
+import org.trubitsyn.motivator.util.MockModelFabric;
 import org.trubitsyn.motivator.view.MainView;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import io.reactivex.Observable;
+import io.reactivex.Single;
+import io.reactivex.schedulers.Schedulers;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-@Config(constants = BuildConfig.class)
+@Config(application = Motivator.class)
 @RunWith(RobolectricTestRunner.class)
 public class MainPresenterTest {
     private MainPresenter presenter;

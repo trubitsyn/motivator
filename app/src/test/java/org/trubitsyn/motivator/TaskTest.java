@@ -20,7 +20,6 @@
 package org.trubitsyn.motivator;
 
 import org.junit.Test;
-
 import org.trubitsyn.motivator.model.Frequency;
 import org.trubitsyn.motivator.model.Task;
 

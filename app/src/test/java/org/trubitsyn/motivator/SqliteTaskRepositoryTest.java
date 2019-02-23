@@ -22,30 +22,25 @@ package org.trubitsyn.motivator;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import org.trubitsyn.motivator.util.MockModelFabric;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
-import org.robolectric.annotation.Config;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import org.trubitsyn.motivator.model.Frequency;
 import org.trubitsyn.motivator.model.SqliteTaskRepository;
 import org.trubitsyn.motivator.model.Task;
 import org.trubitsyn.motivator.model.TaskContract;
 import org.trubitsyn.motivator.model.TaskDbHelper;
+import org.trubitsyn.motivator.util.MockModelFabric;
 
-import org.trubitsyn.motivator.BuildConfig;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricTestRunner.class)
-@Config(constants = BuildConfig.class)
 public class SqliteTaskRepositoryTest {
     private TaskDbHelper dbHelper;
     private SqliteTaskRepository repository;

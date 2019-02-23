@@ -20,11 +20,10 @@
 package org.trubitsyn.motivator;
 
 import org.junit.Test;
-
-import java.util.concurrent.TimeUnit;
-
 import org.trubitsyn.motivator.model.Frequency;
 import org.trubitsyn.motivator.notification.FrequencyConverter;
+
+import java.util.concurrent.TimeUnit;
 
 import static junit.framework.Assert.assertEquals;
 

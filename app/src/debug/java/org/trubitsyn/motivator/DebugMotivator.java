@@ -20,8 +20,7 @@
 package org.trubitsyn.motivator;
 
 import com.facebook.stetho.Stetho;
-
-import org.trubitsyn.motivator.Motivator;
+import com.squareup.leakcanary.LeakCanary;
 
 public class DebugMotivator extends Motivator {
 
@@ -29,5 +28,9 @@ public class DebugMotivator extends Motivator {
     public void onCreate() {
         super.onCreate();
         Stetho.initializeWithDefaults(this);
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            return;
+        }
+        LeakCanary.install(this);
     }
 }

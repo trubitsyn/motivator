@@ -20,7 +20,6 @@
 package org.trubitsyn.motivator;
 
 import org.junit.Test;
-
 import org.trubitsyn.motivator.model.TaskContract;
 
 import static junit.framework.Assert.assertEquals;

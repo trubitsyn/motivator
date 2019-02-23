@@ -19,11 +19,11 @@
 
 package org.trubitsyn.motivator.util;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.trubitsyn.motivator.model.Frequency;
 import org.trubitsyn.motivator.model.Task;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MockModelFabric {
 

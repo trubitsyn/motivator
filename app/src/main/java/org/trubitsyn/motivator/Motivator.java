@@ -24,16 +24,15 @@ import android.content.Context;
 import android.support.annotation.VisibleForTesting;
 
 import com.jakewharton.threetenabp.AndroidThreeTen;
-import com.squareup.leakcanary.LeakCanary;
 
-import org.trubitsyn.motivator.model.TaskDbHelper;
-
-import io.reactivex.Scheduler;
-import io.reactivex.schedulers.Schedulers;
 import org.trubitsyn.motivator.model.Preferences;
 import org.trubitsyn.motivator.model.Repository;
 import org.trubitsyn.motivator.model.SqliteTaskRepository;
 import org.trubitsyn.motivator.model.Task;
+import org.trubitsyn.motivator.model.TaskDbHelper;
+
+import io.reactivex.Scheduler;
+import io.reactivex.schedulers.Schedulers;
 
 public class Motivator extends Application {
     private TaskDbHelper taskDbHelper;
@@ -44,12 +43,6 @@ public class Motivator extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            return;
-        }
-        LeakCanary.install(this);
-
         AndroidThreeTen.init(this);
         defaultScheduler = Schedulers.io();
         taskDbHelper = new TaskDbHelper(this);

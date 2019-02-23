@@ -27,7 +27,6 @@ import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
 import org.trubitsyn.motivator.view.ItemTouchHelperAdapter;
 import org.trubitsyn.motivator.view.ItemTouchHelperCustomCallback;
 
