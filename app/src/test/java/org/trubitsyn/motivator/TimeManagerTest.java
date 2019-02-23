@@ -23,7 +23,7 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
-import static trubitsyn.motivator.notification.TimeManager.shouldIgnoreNow;
+import static org.trubitsyn.motivator.notification.TimeManager.shouldIgnoreNow;
 
 public class TimeManagerTest {
 
