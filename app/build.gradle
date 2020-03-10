@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId "org.trubitsyn.motivator"
         resConfigs "en", "ru"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0.0-M2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
