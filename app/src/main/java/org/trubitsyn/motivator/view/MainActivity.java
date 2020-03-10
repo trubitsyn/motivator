@@ -172,7 +172,9 @@ public class MainActivity extends AppCompatActivity implements DatabaseConnectio
 
     @Override
     protected void onDestroy() {
-        presenter.detachView();
+        if (presenter != null) {
+            presenter.detachView();
+        }
         super.onDestroy();
     }
 }
